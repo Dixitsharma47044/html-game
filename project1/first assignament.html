@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>First Assignment</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>Complex Form Assigament</h1>
+            </header>
+            <h3>User registration form</h3>
+
+            <form action="post">
+                <fieldset>
+                    <legend><b>Personal information</b></legend>
+                    <label for="username">Name</label>
+                    <input type="text" name="username" placeholder="Enter your name" autofocus required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required
+                        pattern="^[a-zA-Z0-9._%+-]+@gmail\.com">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="Age" placeholder="Age" required>
+                    <label for="country">country</label>
+                    <select name="country" placeholder="select a country" required>
+                        <option value="india">India</option>
+                        <option value="china">china</option>
+                        <option value="nepal">nepal</option>
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <input type="radio" id="male" name="gender">
+                            <label for="Male">Male</label>
+                            <input type="radio" id="female" name="gender">
+                            <label for="Female">Female</label>
+                        </fieldset>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><b>Additional information</b></legend>
+                    <label for="Bio">Bio</label>
+                    <textarea rows="4" cols="24" id="Bio" name="Bio">
+                </textarea>
+                    Choose your intereste<br>
+                    <ul>
+                        <li><input type="checkbox" id="interest1" name="intreset" value="technolgy">
+                            <label for="interset">technolgy</label>
+                        <li><input type="checkbox" id="interest2" name="intreset" value="sports">
+                            <label for="interset">sports</label>
+                        <li><input type="checkbox" id="interest3" name="intreset" value="music">
+                            <label for="interset">music</label>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="Submit">
+        </section>
+        <section>
+            <h2>HTML Elements Ddemonstation</h2>
+            <b>Definition List</b>
+            <dl>
+                <DT> HTML</DT>
+                <DD> HyperText Markup Language</DD>
+                <Dt>CSS</Dt>
+                <dd>Cascading Style Sheet</dd>
+                <dt>JS</dt>
+                <dd>JavaScript</dd>
+            </dl>
+        </section>
+        <section>
+            <h3>Embedded video</h3>
+            <video src="videoplayback.mp4" controls height="175"></video>
+            <h3>Iframe Example</h3>
+            <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+                height="250" width="400"></iframe>
+            <h3>image gallery</h3>
+            <img src="OIP.jfif" height="140">
+            <img src="258.avif" height="140" width="270">
+            <img src="355.jpg" height="140">
+        </section>
+        <section>
+            <h3>complex table</h3>
+            <table width="100%" height="300" border="">
+                <caption><b>Product inventory</b></caption>
+                <tr>
+                    <th rowspan="2">cetegory</th>
+                    <th colspan="3">products</th>
+                    <th rowspan="2">total stock</th>
+                </tr>
+                <tr>
+                    <th>name</th>
+                    <th>price</th>
+                    <th>stock</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">Electronics</td>
+                    <td>smartphone</td>
+                    <td>$599</td>
+                    <td>50</td>
+                    <td rowspan="3">120</td>
+                </tr>
+                <tr>
+                    <td>laptop</td>
+                    <td>$999</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>tablet</td>
+                    <td>$299</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">clothing</td>
+                    <td>t-shirt</td>
+                    <td>$19.99</td>
+                    <td>100</td>
+                    <td rowspan="2">180</td>
+                </tr>
+                <tr>
+                    <td>jeans</td>
+                    <td>$49.99</td>
+                    <td>80</td>
+                </tr>
+            </table>
+            <br>
+            <footer>
+                <p >@ 2024 your name. All right receved</p>
+        </section>
+    </main>
+    </footer>
+</body>
+
+</html>
