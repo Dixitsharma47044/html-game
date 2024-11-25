@@ -71,6 +71,7 @@ label {
 
 ul li {
     margin-bottom: 5px;
+    display:inline-block
 }
 
 /* Submit button */
