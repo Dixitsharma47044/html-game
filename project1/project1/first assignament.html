@@ -19,23 +19,26 @@
             <form action="post">
                 <fieldset>
                     <legend><b>Personal information</b></legend>
-                    <label for="username">Name</label>
-                    <input type="text" name="username" placeholder="Enter your name" autofocus required>
-                    <label for="email">Email</label>
+                    <label>Name
+                        <input type="text" name="username" placeholder="Enter your name" autofocus required
+                            autocomplete="name">
+                    </label>
+                    <label for="email">Email
                     <input type="email" id="email" name="email" placeholder="Enter your Email" required
-                        pattern="^[a-zA-Z0-9._%+-]+@gmail\.com">
+                        pattern="^[a-zA-Z0-9._%+-]+@gmail\.com"></label>
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="Password" required>
                     <label for="age">Age</label>
                     <input type="number" id="age" name="Age" placeholder="Age" required>
-                    <label for="country">country</label>
-                    <select name="country" placeholder="select a country" required>
+                    <label>country
+                    <select name="country" title="dixit" placeholder="select a country" required>
                         <option value="india">India</option>
                         <option value="china">china</option>
                         <option value="nepal">nepal</option>
-                    </select>
-                    <label for="Gender">Gender</label><br>
+                    </select></label>
+                    <label>Gender<br>
                     <input type="radio" id="male" name="gender" value="Male">
+                </label>
                     <label for="male">Male</label>
                     <input type="radio" id="female" name="gender" value="Female">
                     <label for="female">Female</label>
@@ -47,16 +50,17 @@
                 </textarea>
                     Choose your intereste<br>
                     <ul>
-                        <li><input type="checkbox" id="interest" name="intreset" value="technolgy"></li>
-                        <label for="interset">technolgy</label><br>
-                        <li><input type="checkbox" id="interest" name="intreset" value="sports"></li>
-                        <label for="interset">sports</label><br>
-                        <li><input type="checkbox" id="interest" name="intreset" value="music"></li>
-                        <label for="interset">music</label>
+                        <li><input type="checkbox" id="technolgy" name="intreset" value="technolgy"></li>
+                        <label for="technolgy">technolgy</label><br>
+                        <li><input type="checkbox" id="sports" name="intreset" value="sports"></li>
+                        <label for="sports">sports</label><br>
+                        <li><input type="checkbox" id="music" name="intreset" value="music"></li>
+                        <label for="music">music</label>
                     </ul>
                 </fieldset>
                 <input type="submit" value="Submit">
         </section>
+        </form>
         <section>
             <h2>HTML Elements Ddemonstation</h2>
             <b>Definition List</b>
@@ -73,13 +77,13 @@
             <h3>Embedded video</h3>
             <video src="videoplayback.mp4" controls height="175"></video>
             <h3>Iframe Example</h3>
-            <iframe
+            <iframe name="dixit" title="dixittit"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
                 height="250" width="400"></iframe>
             <h3>image gallery</h3>
-            <img src="OIP.jfif" height="140">
+            <img src="OIP.jfif" height="140" widh="270">
             <img src="258.avif" height="140" width="270">
-            <img src="355.jpg" height="140">
+            <img src="355.jpg" height="140" width="270">
         </section>
         <section>
             <h3>complex table</h3>
@@ -125,7 +129,7 @@
                     <td>80</td>
                 </tr>
             </table>
-            <br>
+            </form>
             <footer>
                 <p>@ 2024 your name. All right receved</p>
         </section>
