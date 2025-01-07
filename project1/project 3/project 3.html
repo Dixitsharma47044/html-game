@@ -10,89 +10,227 @@
             margin: 0;
         }
 
-        .container {
-            display: flex;
-            flex-wrap:wrap;
+        body {
+            background-color: #ffffff;
+
         }
 
         .nav img {
-            width: 80px;
-            margin: 15px;
+            width: 100px;
         }
 
         .nav {
-            background-color: rgb(103, 135, 204);
-            width: 1750px;
-            height: 80px;
-            padding-bottom: 50px;
-            font-size: 25px;
+            background-color: #fdf9f9;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
 
+        .nav ul {
+            display: flex;
+            list-style: none;
         }
 
         .nav ul li {
-            display: inline;
+            padding: 15px;
         }
 
-        .box1 h3 {
+        .nav ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(19, 20, 20);
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .items1 {
+            background-color: #f3efef;
+            height: 100%;
+            width: 50vw;
+            border: 1px solid rgb(141, 137, 137);
+
+        }
+
+        .items1 h3 {
+            padding: 15px;
+
+        }
+
+        .items1 ul li a {
+            padding-left: 50px;
+            color: black;
+
+        }
+
+        .items1 ul li {
+            list-style-type: circle;
+        }
+
+        .items2 {
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        .items2 span {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .items2 p {
+            width: 100%;
             margin: 15px;
         }
 
-        .box1 {
-            height: 1500px;
-            width: 250px;
-            background-color: #bfd376;
+        .itmes2 h1 {
+            margin: 10px;
+            padding: 10px
         }
 
-        .box2 {
-            width: 1474px;
-            height: 1500px;
-            background-color: hsl(17, 96%, 80%);
+        .items2 span button {
+            background-color: black;
+            color: #bdc0be;
+            border-radius: 5px;
+            margin: 5px;
         }
 
-        .box1 ul li {
+        .items2 h2 {
+            margin: 15px
+        }
+
+        .items2 h3 {
             margin: 15px;
-            text-decoration: underline;
         }
-    </style>
+
+        .items2 video {
+            width: 700px;
+        }
+        </style>
 </head>
+<header>
+    <div class="nav"><img src="258.avif">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Notes</a></li>
+            <li><a href="#">contect</a></li>
+        </ul>
+    </div>
+</header>
 
 <body>
     <div class="container">
-        <div class="nav"><img src="258.avif">
-            <ul>
-                <li>Home</li>
-                <li>Courses</li>
-                <li>Tutorial</li>
-                <li>Blog</li>
-                <li>Notes</li>
-                <li>contect</li>
-            </ul>
-        </div>
-        <div class="box1">
+        <div class="items1">
             <h3>INTRODUCTION</h3>
             <ul>
-                <li>HTML Introduction</li>
-                <li>HTML Working</li>
-                <li>HTML Intallation</li>
-                <li>HTML Execution</li>
-                <li>HTML Page Structure</li>
-                <li>HTML Tags</li>
-                <li>HTML Elements</li>
-                <li>HTML Attributes</li>
-                <li>HTML Comments</li>
-                <li>HTML Id & Class</li>
+                <li><a href="#">HTML Introduction</a></li>
+                <li><a href="#">HTML Working</a></li>
+                <li><a href="#">HTML Intallation</a></li>
+                <li><a href="#">HTML Execution</a></li>
+                <li><a href="#">HTML Page Structure</a></li>
+                <li><a href="#">HTML Tags</a></li>
+                <li><a href="#">HTML Elements</a></li>
+                <li><a href="#">HTML Attributes</a></li>
+                <li><a href="#">HTML Comments</a></li>
+                <li><a href="#">HTML Id & Class</a></li>
             </ul>
             <h3>HTML BASIC TAGS</h3>
             <ul>
-                <li>Skeletal Tags</li>
-                <li>Heading Tags</li>
-                <li></li>
+                <li><a href="#">Skeletal Tags</a></li>
+                <li><a href="#">Heading Tags</a></li>
+                <li><a href="#">Paragraph Tag </a></li>
+                <li><a href="#">Horizontal Line Tag</a></li>
+                <li><a href="#">Line Break Tag</a></li>
+                <li><a href="#">Anchor Tag</a></li>
+                <li><a href="#">Image Tag</a></li>
+                <li><a href="#">Pre Tag</a></li>
             </ul>
+            <h3>INLINE & BLOCK ELEMENTS</h3>
+            <ul>
+                <li><a href="#">HTML Inline Elements</a></li>
+                <li><a href="#">HTML Block Elements</a></li>
+            </ul>
+            <h3>HTML LISTS</h3>
+            <ul>
+                <li><a href="#">HTML LISTS </a></li>
+                <li><a href="#">HTML Unordered List</a></li>
+                <li><a href="#">HTML Unordered List</a></li>
+                <li><a href="#">HTML Definition Lists</a></li>
+            </ul>
+            <h3>HTML TABLES</h3>
+            <ul>
+                <li><a href="#">HTML TABLES</a></li>
+                <li><a href="#">More on Tables</a></li>
+            </ul>
+
         </div>
-        <div class="box2"></div>
+        <div class="items2"><span>
+                <button>previous</button>
+                <button>next >></button>
+            </span>
+            <h1>HTML Introduction</h1>
+            <p>Today, I'm writing this tutorial to create a resource that will help you learn HTML in less than 30 days.
+                Here's a recommended timeline for learning HTML, based on your educational background:
 
+                High School students and younger: Around 25 days
+                Those beyond High School: Around 20 days
+                College students and above: Around 10-20 days
+                You may be wondering why I'm discussing these timelines. It's important for me to set expectations
+                before you start your journey of learning html with me.
+
+                My name is Harry (the same CodeWithHarry guy from YouTube), and today I'm writing this comprehensive
+                HTML tutorial for all of you. Let's jump right into HTML! </p>
+            <h2>What IS HTML?</h2>
+            <p>HTML (HyperText Markup Language) was created by Tim Berners-Lee in 1991 as a standard for creating web
+                pages. It's a markup language used to structure content on the web, defining elements like headings,
+                paragraphs, links, and images. HTML forms the backbone of web content. In layman's terms, HTML is like
+                the skeleton of a website. It's a set of instructions that tells a web browser how to display text,
+                images, videos, and other elements on a webpage. Think of it as the building blocks that create the
+                structure and look of a website, similar to how bricks and mortar are used to build a house.
+
+                In a nutshell:
+            <ul>
+                <li>HTML is the language of the web, used to create websites.</li>
+                <li>HTML defines the barebone structure or layout of web pages that we see on the Internet.</li>
+                <li>HTML consists of a set of tags contained within an HTML document, and the associated files typically
+                    have either a ".html" or ".htm" extension.</li>
+                <li>There are several versions of HTML, with HTML5 being the most recent version.</li>
+            </ul>
+            </p>
+            <h2>Features OF HTML</h2>
+            <UL>
+                <LI>It is platform-independent. For example, Chrome displays the same pages identically across different
+                    operating systems such as Mac, Linux, and Windows.</LI>
+                <LI>Images, videos, and audio can be added to a web page (For example - YouTube shows videos on their
+                    website)</LI>
+                <LI>HTML is a markup language and not a programming language.</LI>
+                <LI>It can be integrated with other languages like CSS, JavaScript, etc. to show interactive (or
+                    dynamic) web pages</LI>
+            </UL>
+            <H3>Why the Term HyperText & Markup Language?</H3>
+            <p>The term 'Hypertext Markup Language' is composed of two main words: 'hypertext' and 'markup language.'
+                'Hypertext' refers to the linking of text with other documents, while 'markup language' denotes a
+                language that utilizes a specific set of tags.
+
+                Thus, HTML is the practice of displaying text, graphics, audio, video etc. in a certain way using
+                special tags.<br>
+
+                <b>Note:</b> Tags are meaningful texts enclosed in angle braces, like '<...>'. For example, the '
+
+                    <head>' tag. Each tag has a unique meaning and significance in building an HTML page, and it can
+                        influence the web page in various ways.
+            </p>
+            <h3>Quick Exercise:</h3>
+            <p>Open a webpage of your choice, right-click on the browser, and select 'View Page Source,' and then you
+                will see the HTML code for that page.
+                <video src="video no1.mp4" autoplay="autoplay" controls="controls" loop="loop"></video>
+            </p>
+        </div>
     </div>
-
 </body>
 
 </html>
