@@ -1,72 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       *{
-        margin:0;
-        padding: 0;
-       }
-       header{
-        display: flex;
-        justify-content: space-between;
-        background-color: #e7e5e5;
-       }
-       .games{
-        display:flex;
-       }
-       .list ul li{
-        list-style: none;
-        display: flex;       
-       }
-       
-       
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(221, 218, 218);
+            height: 30px;
+            align-items: center;
+            padding: 10px;
+            cursor: grab;
+        }
+
+        .games {
+            display: flex;
+            align-items: center;
+        }
+
+        .harry {
+            display: inline;
+        }
+
+        .two {
+            display: inline;
+            margin: 15px
+        }
+
+        .list ul li {
+            list-style: none;
+            display: inline;
+            margin: 20px
+        }
+
+        nav {
+            background-color: #f8f1f1;
+            padding: 8px;
+        }
+
+        .nav-home {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            display: inline;
+            margin: 15px;
+        }
+
+        .btn {
+            background-color: #9031e9;
+            border: none;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .emoji {
+            margin-right: 15px;
+        }
+
+        .nav-links ul {
+            margin-left: 110px;
+        }
     </style>
+
 <body>
-    
-        <header>
-            <div class="games">
-                <div class="harry">&lt; / &gt; CodeWithHarry</div>
-                    </div>
-                    <div class="two">Menu</div>
-                      <div class="list" > <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Courses</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Notes</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">&#128507;</a></li>
-                        </ul>
-                        </div>
-                    </nav>
-                    </div>
-                    <div class="auth-buttons">
-                        <button>Login</button>
-                        <button>Sign In</button>
-                    </div>
-            </header>
-            <nav>
-                <div class="nav-home">
-                    <button class="btn"><i class="fa fa-home"></i> Home</button>
-        <div class="nav-links">
+
+    <header>
+        <div class="games">
+            <div class="harry"><b>&lt; / &gt; CodeWithHarry</div>
+            <div class="two">Menu</b></div>
+        </div>
+        <div class="list">
             <ul>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JS</a></li>
-                <li><a href="#">C</a></li>
-                <li><a href="#">C++</a></li>
-                <li><a href="#">Java</a></li>
-                <li><a href="#">Python</a></li>
-                <li><a href="#">PHP</a></li>
-                <li><a href="#">ReactJS</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Notes</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">&#128507;</a></li>
             </ul>
+        </div>
+        <div class="auth-buttons">
+            <button>Login</button>
+            <button>Sign In</button>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-home">
+            <button class="btn"> Home</button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JS</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">ReactJS</a></li>
+                </ul>
             </div>
             <div class="emoji">&#128508;</div>
-                </div>
-                </nav>
-        
+        </div>
+    </nav>
 </body>
+
 </html>
