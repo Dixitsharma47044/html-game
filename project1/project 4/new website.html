@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            background-color: #bbb8b8;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+            cursor: grab;
+        }
+
+        .harry span {
+            border: 1px solid black;
+            border-radius: 13px;
+            padding: 3px;
+        }
+
+        .list ul {
+            display: flex;
+            list-style: none;
+            gap: 2em;
+            padding-left: 40vw;
+        }
+        .list ul li a{
+            text-decoration: none;
+            color: #080808;
+        }
+
+        .auth-btn button {
+            padding: 5px;
+            border-radius: 10px;
+            background-color: #080808;
+        }
+
+        .auth-btn button a {
+            color: red;
+            text-decoration: none;
+        }
+
+        nav {
+            background-color: #e4ddee;
+            display: flex;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            /* justify-content: space-between; */
+        }
+
+        .course ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem
+        }
+
+        .course {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        nav button a {
+            padding: 10px;
+            color:white;
+            text-decoration: none;
+        }
+
+        nav button {
+            border-radius: 10px;
+            background-color: #7a09fc;
+        }
+        .course ul li a{
+            text-decoration: none;
+            color:#7a09fc;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            background-color: #c4c7c0;
+            display: flex;
+        }
+        .container aside{
+            width:20vw;
+            height:auto;
+            background-color: #fff;
+        }
+        aside h2{
+           padding-left:15px;
+           font-size: 16px;
+        }
+        aside ul{
+            margin-left: 50px;
+            list-style:circle
+        }
+        aside ul li a{
+            text-decoration: none;
+            color:#5e269e;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .container main{
+            width:80vw;
+            height:auto;
+             background-color: #dadfd5;
+        }
+        .top{
+            text-align: center;
+            font-size: 10px;
+            border-bottom:1px solid rgb(206, 202, 202);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="harry">
+            CodeWithHarry
+            <span class="programming">&#8709; Programming course</span>
+        </div>
+        <span class="list">
+            <ul>
+                <li><a href="$">Home</a></li>
+                <li><a href="$">Course</a></li>
+                <li><a href="$">Tutorial</a></li>
+                <li><a href="$">Blog</a></li>
+                <li><a href="$">Notes</a></li>
+                <li><a href="$">Contect</a></li>
+                <li><a href="$">My Gear</a></li>
+                <li><a href="$">Work With Us</a></li>
+            </ul>
+        </span>
+        <span class="auth-btn">
+            <button><a href="https://google.com">Google</a> </button>
+            <button><a href="/login">login</a></button>
+        </span>
+    </header>
+    <nav>
+        <button><a href="/Home">Home</a></button>
+        <span class="course">
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JS</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">C++</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">React JS</a></li>
+            </ul>
+        </span>
+    </nav>
+    <div class="container">
+        <aside>
+            <h2>INTRODUCTION</h2>
+            <ul>
+                <li><a href="#">HTML Introduction</a></li>
+                <li><a href="#">HTML Woring</a></li>
+                <li><a href="#">HTML Installation</a></li>
+                <li><a href="#">HTML Execution</a></li>
+                <li><a href="#">HTML Page struture</a></li>
+                <li><a href="#">HTML Tags</a></li>
+                <li><a href="#">HTML Elements</a></li>
+                <li><a href="#">HTML Attributes</a></li>
+                <li><a href="#">HTML comments</a></li>
+                <li><a href="#">HTML Id & Classes</a></li></ul>
+                <h2>HTML BASIC TAGES</h2>
+                <ul>
+                <li><a href="#">Skeletal Tags </a></li>
+                <li><a href="#">Heading Tags </a></li>
+                <li><a href="#">Paragraph Tag </a></li>
+                <li><a href="#">Horizontal Tag </a></li>
+                <li><a href="#">Line Break Tag </a></li>
+                <li><a href="#">Anchor Tag </a></li>
+                <li><a href="#">Image Tag</a></li>
+                <li><a href="#">Per Tag </a></li></ul>
+                <h2>INLINE & BLOCK ELEMENTS</h2>
+                <ul>
+                <li><a href="#">HTML Inline Elements</a></li>
+                <li><a href="#">HTML Block Elements</a></li>       
+            </ul>
+        </aside>
+        <main>
+            <div class="top"> This site uses Google AdSense ad intent links. AdSense automatically generates these links and they may help creators earn money.
+            </div>
+            <button><a href="#">Previous</a></button>
+            <button><a href="#">next</a></button>
+        </main>
+    </div>
+
+</body>
+
+</html>
