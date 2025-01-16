@@ -4,11 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <style>
-        * {
+        
+       *{
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            font-family: Arial, sans-serif;
         }
 
         header {
@@ -30,7 +37,7 @@
             display: flex;
             list-style: none;
             gap: 2em;
-            padding-left: 40vw;
+            justify-content: end;
         }
 
         .list ul li a {
@@ -45,7 +52,7 @@
         }
 
         .auth-btn button a {
-            color: red;
+            color: rgb(8, 147, 240);
             text-decoration: none;
         }
 
@@ -123,7 +130,7 @@
         .container main {
             width: 79vw;
             height: auto;
-            background-color: #c6c9c2;
+            background-color: #f8faf5;
         }
 
         .top {
@@ -155,63 +162,78 @@
             padding-bottom: 5px;
             font-weight: bold;
         }
-
-        .flex-start {
-            border: 2px solid black;
-            padding: 5px;
-            margin: 5px;
-        }
-
         .f-start {
             display: flex;
             justify-content: flex-start;
             gap: 2rem;
-        }
-
-        .center {
             border: 2px solid black;
             padding: 5px;
             margin: 5px;
+            align-items: flex-start;
         }
 
         .j-center {
             display: flex;
             justify-content: center;
             gap: 2rem;
-        }
-
-        .flex-end {
             border: 2px solid black;
             padding: 5px;
             margin: 5px;
+            align-items: flex-start;
         }
-
         .f-end {
             display: flex;
             justify-content: flex-end;
             gap: 2rem;
-        }
-
-        .space-between {
             border: 2px solid black;
             padding: 5px;
             margin: 5px;
+            align-items: flex-start;
         }
-
         .s-between {
             display: flex;
             justify-content: space-between;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            align-items: flex-start;
         }
+        .s-around{
+            display: flex;
+            justify-content:space-around;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            align-items: flex-start;
+        }
+        .sp-between{
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            align-items:center;
+            height: 250px;
+        }
+        .s-bflex-end{
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            align-items:flex-end;
+            height: 250px; 
+        }
+   
     </style>
 </head>
-
 <body>
     <header>
         <div class="harry">
             CodeWithHarry
             <span class="programming">&#8709; Programming course</span>
         </div>
-        <span class="list">
+        <div class="list">
             <ul>
                 <li><a href="$">Home</a></li>
                 <li><a href="$">Course</a></li>
@@ -222,7 +244,7 @@
                 <li><a href="$">My Gear</a></li>
                 <li><a href="$">Work With Us</a></li>
             </ul>
-        </span>
+        </div>
         <span class="auth-btn">
             <button><a href="https://google.com">Google</a> </button>
             <button><a href="/login">login</a></button>
@@ -322,6 +344,30 @@
                 <div class="space-between">
                     <h3>space-between</h3>
                     <div class="s-between">
+                        <img src="147.jpg" alt="">
+                        <img src="258.jpg" alt="">
+                        <img src="369.jpg" alt="">
+                    </div>
+                </div>
+                <div class="space-around">
+                    <h3>space around flex start</h3>
+                    <div class=s-around>
+                        <img src="147.jpg" alt="">
+                        <img src="258.jpg" alt="">
+                        <img src="369.jpg" alt="">
+                    </div>
+                </div>
+                <div class="aline-center">
+                    <h3>space between center</h3>
+                    <div class="sp-between">
+                        <img src="147.jpg" alt="">
+                        <img src="258.jpg" alt="">
+                        <img src="369.jpg" alt="">
+                    </div>
+                </div>
+                <div class="space-between end">
+                    <h3>space-between flex-end</h3>
+                    <div class="s-bflex-end">
                         <img src="147.jpg" alt="">
                         <img src="258.jpg" alt="">
                         <img src="369.jpg" alt="">
