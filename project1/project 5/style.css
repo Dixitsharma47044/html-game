@@ -1,0 +1,37 @@
+@media screen and (max-width: 600px) {
+    body{
+        background-color: rgb(243, 110, 110);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+         box-sizing: border-box;
+}
+header{
+    height:40px;
+}
+}
+    header {
+        background-color: #485463;
+    }
+       
+    *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            box-sizing:border-box;
+            line-height: 1.5;
+            background-color: #bec0bb;
+        }
+        header{
+            display: flex;
+            justify-content:space-between;
+            background-color: #9b9797;
+            color: rgb(49, 32, 9);
+            height: 50px;
+            align-items: center;
+            padding: 15px;
+        }
+        header .nav-list ul {
+            display: flex;
+            list-style: none;
+            gap: 2em;
+        }

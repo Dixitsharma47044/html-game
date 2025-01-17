@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            box-sizing: border-box;
+            line-height: 1.5;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #9b9797;
+            color: rgb(49, 32, 9);
+            height: 50px;
+            align-items: center;
+            padding: 15px;
+        }
+
+        header .nav-list ul {
+            display: flex;
+            list-style: none;
+            gap: 2em;
+        }
+
+        header .auth-btn button {
+            margin-left: 10px;
+        }
+
+        nav .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+
+        nav .nav-bar ul {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        aside {
+            padding: 15px;
+            background-color: #f0f0f0;
+            width: 20%;
+            float: left;
+        }
+
+        main {
+            padding: 15px;
+            margin-left: 22%;
+        }
+
+        .flex-start img {
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header .nav-list ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header .auth-btn {
+                margin-top: 10px;
+            }
+
+            nav .nav-bar {
+                flex-direction: column;
+            }
+
+            nav .nav-bar ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+
+            aside {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            main {
+                margin-left: 0;
+            }
+
+            .flex-start img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+
+            header .nav-list ul {
+                font-size: 0.9rem;
+            }
+
+            nav .nav-bar {
+                padding: 5px;
+            }
+
+            aside h2 {
+                font-size: 1rem;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            .flex-start img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="harry">Code With Harry</div>
+    <div class="nav-list">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Course</a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Notes</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">My gear</a></li>
+        </ul>
+    </div>
+    <div class="auth-btn">
+        <button><a href="https://google.com">Google</a></button>
+        <button><a href="#">Login</a></button>
+    </div>
+</header>
+<nav>
+    <div class="nav-bar">
+        <button><a href="#">Home</a></button>
+        <span>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">C++</a></li>
+                <li><a href="#">JAVA</a></li>
+                <li><a href="#">PHP</a></li>
+            </ul>
+        </span>
+    </div>
+</nav>
+<div class="container">
+    <aside>
+        <h2>INTRODUCTION</h2>
+        <ul>
+            <li><a href="#">HTML Introduction</a></li>
+            <li><a href="#">HTML Working</a></li>
+            <li><a href="#">HTML Installation</a></li>
+            <li><a href="#">HTML Execution</a></li>
+            <li><a href="#">HTML Page Structure</a></li>
+            <li><a href="#">HTML Tags</a></li>
+            <li><a href="#">HTML Elements</a></li>
+            <li><a href="#">HTML Attributes</a></li>
+            <li><a href="#">HTML Comments</a></li>
+            <li><a href="#">HTML ID & Classes</a></li>
+        </ul>
+    </aside>
+</div>
+<main>
+    <div class="top">This site uses Google AdSense ad intent links. AdSense automatically generates these links
+        and they may help creators earn money.
+    </div>
+    <div class="pre-btn">
+        <button><a href="#">Previous</a></button>
+        <button><a href="#">Next</a></button>
+    </div>
+    <div class="flex">
+        <h2>Flexbox</h2>
+        <dl>
+            <dt>What is CSS Flexbox?</dt>
+            <dd>Flexbox is short for the Flexible Box Layout module.<br>
+                Flexbox is a layout method for arranging items in rows or columns.<br>
+                Flexbox makes it easier to design a flexible responsive layout structure, without using float or
+                positioning.
+            </dd>
+        </dl>
+        <h2>justify-content</h2>
+        <div class="flex-start">
+            <h3>Flex Start</h3>
+            <div class="f-start">
+                <img src="147.jpg" alt="nature">
+                <img src="258.jpg" alt="nature">
+                <img src="369.jpg" alt="nature">
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,183 @@
+
+       *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            background-color: #bbb8b8;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+            cursor: grab;
+        }
+
+        .harry span {
+            border: 1px solid black;
+            border-radius: 13px;
+            padding: 3px;
+        }
+
+        .list ul {
+            display: flex;
+            list-style: none;
+            gap: 2em;
+            padding-left: 40vw;
+        }
+
+        .list ul li a {
+            text-decoration: none;
+            color: #080808;
+        }
+
+        .auth-btn button {
+            padding: 5px;
+            border-radius: 10px;
+            background-color: #080808;
+        }
+
+        .auth-btn button a {
+            color: red;
+            text-decoration: none;
+        }
+
+        nav {
+            background-color: #e4ddee;
+            display: flex;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            /* justify-content: space-between; */
+        }
+
+        .course ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem
+        }
+
+        .course {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        nav button a {
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav button {
+            border-radius: 10px;
+            background-color: #7a09fc;
+        }
+
+        .course ul li a {
+            text-decoration: none;
+            color: #7a09fc;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 100vw;
+            height: auto;
+            background-color: #c4c7c0;
+            display: flex;
+        }
+
+        .container aside {
+            width: 20vw;
+            height: auto;
+            background-color: #fdfbfd;
+        }
+
+        aside h2 {
+            padding-left: 15px;
+            font-size: 16px;
+        }
+
+        aside ul {
+            margin-left: 50px;
+            list-style: circle
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            color: #5e269e;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .container main {
+            width: 79vw;
+            height: auto;
+            background-color: #c6c9c2;
+        }
+
+        .top {
+            text-align: center;
+            font-size: 10px;
+            border-bottom: 1px solid rgb(206, 202, 202);
+        }
+
+        .pre-btn {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .pre-btn a {
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .flex {
+            margin: 10px;
+        }
+
+        .flex h2 {
+            padding-bottom: 8px
+        }
+
+        .flex dt {
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+        .f-start {
+            display: flex;
+            justify-content: flex-start;
+            gap: 2rem;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .j-center {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px;
+        }
+        .f-end {
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px;
+        }
+        .s-between {
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+   
