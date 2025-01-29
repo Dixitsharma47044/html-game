@@ -2,15 +2,22 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: rgb(206, 201, 201);
+    background-color: rgb(240, 241, 241);
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 section {
     width: 855px;
     margin: 10px;
-    /* border-radius: 10px; */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: rgb(240, 241, 241);
+
 }
 
 .h2 {
@@ -27,10 +34,13 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 15px;
     background-color: #fff;
     border-radius: 15px;
 }
+ .nav-bar span{
+    background-color: #fff;
+ }
 
 .nav-list a {
     background-color: #fff;
@@ -42,6 +52,7 @@ section {
     gap: 2em;
     list-style: none;
     background-color: #fff;
+    
 }
 
 .nav-list a {
@@ -68,7 +79,9 @@ textarea {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 300px;
+    height: 400px;
+    background-color: (240, 241, 241);;
+gap: 10px;
 }
 
 .grid1 {
@@ -77,6 +90,8 @@ textarea {
     height: 100%;
     background-color: #fff;
     border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    
 }
 
 .box1 {
@@ -86,10 +101,16 @@ textarea {
     background-color: #fffdfd;
 
 }
+.btn1{
+    background-color: #fff;
+    margin: 5px;
+}
 
 .btn1 button {
     width: 100%;
-    background-color: #0b81f0;
+    background-color: #3e9ffa;
+    border-radius: 10px;
+
 }
 
 .grid2 {
@@ -99,6 +120,7 @@ textarea {
     border-radius: 10px;
     height: 100%;
     width: 100%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .box2 {
@@ -106,10 +128,11 @@ textarea {
     background-color: #0b81f0;
     width: 100%;
     height: 100%;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .grida {
@@ -121,9 +144,15 @@ textarea {
 
 .ram {
     border-radius: 10px;
-    height: 150px;
+    height: 210px;
     background-color: #fdfbfb;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ram1{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);    
 }
 
 .gridb {
@@ -134,7 +163,7 @@ textarea {
 
 .ramg {
     border-radius: 10px;
-    height: 250px;
+    height: 300px;
     background-color: white;
 
 }
@@ -148,17 +177,12 @@ textarea {
 
 }
 
-/* .ram1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}  */
-
 table {
     width: 100%;
     margin-bottom: 30px;
     background-color: #fff;
     border-radius: 10px;
+    text-align: center;
 }
 
 th {
@@ -174,11 +198,19 @@ td a {
 }
 
 @media (max-width: 555px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+     *{
+        margin: 10px;
+        font-size: 10px;
+     }
     section{
         margin: 5px;
     }
     header .nav-bar {
-        max-width: 555px;
         padding: 5px;
         flex-direction: column;
         align-items: center;
@@ -186,11 +218,10 @@ td a {
     }
     .grid{
         grid-template-columns: 1fr;
-        max-width: 500px;
+        max-width: auto;
     }
     .grid1, .grida, .grid2, .gridb{
         grid-template-columns: 1fr;
-        max-width: 500px;
         margin: 10px;
     }
     .box, .ram, .ramg {
@@ -199,7 +230,6 @@ td a {
         text-align: center;
     }
     footer table {
-       max-width: 500px;
         font-size: 14px;
     }
     footer table td, footer table th {
