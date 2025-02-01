@@ -1,7 +1,7 @@
 *{
     margin: 0;
-    padding: 0;
-    background-color: #131111;
+    padding: 0px;
+    background-color: #f1e9e9;
     overflow-x: auto;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -9,12 +9,13 @@
 .container{
     display: flex;
     flex-direction: column;
+    padding: 15px;
 }
 .nav-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 5px;
 }
 .nav-logo img{
     width: 180px;
@@ -34,16 +35,52 @@ select{
     padding: 8px;
     border-radius: 20px;
 }
-.bgc-img img {
+/* .bgc-img img{
+    object-fit: cover;
+    object-position: center;
     width:100%;
     height:70vh;
-    border-radius: 15px;
-    padding: 15px;
-}
+    border-radius: 35px; */
+    /* -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); */
+    /* mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); */
+    /* z-index: 100; 
+}*/
+
 .bgc-img{
-    /* position: relative; */
-   
+   position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 70vh;
+    width:100%;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/56b4aa77-4df4-4f23-8a39-52acc5dc0efa/web_tall_panel/IN-en-20250127-TRIFECTA-perspective_e27c562f-09b3-472c-ab1d-88452e1c69ac_medium.jpg");  
 }
+.bgc-img .box1{
+    height: 70vh;
+    width: 100%;
+    opacity: 0.50;
+    background-color:black;
+}
+/* .img-text{
+     position: absolute;
+    top: 30%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(252, 245, 245);
+}
+
+.img-text h1 {
+    background-color:transparent;
+    font-size: 32px; 
+    font-weight: bold;
+    color: white;
+}
+.img-text p{ 
+    background-color: transparent;
+    font-weight: bold;
+} */
 .start{
     display: flex;
     flex-direction: column;
@@ -78,8 +115,9 @@ input {
     width: 190px;
 }
 h1{
-    background-color: #fff;
+    background-color:transparent;
+    color: white;
 }
-h3{
-    background-color: #fff;
+p{
+    background-color: transparent;
 }
